@@ -1,0 +1,25 @@
+.tableHead {
+  background-color: rgb(0, 68, 255);
+}
+
+.tableColumn {
+  width: 250px;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tableRow {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #42404069;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #fff;
+}
