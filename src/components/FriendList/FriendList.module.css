@@ -1,0 +1,42 @@
+.friendList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 30px;
+  width: 350px;
+  height: 100px;
+  align-items: center;
+
+  background-color: #140505;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+
+  scale: 1;
+  transition: scale 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.item:hover,
+.item:focus {
+  scale: 1.05;
+  background-color: rebeccapurple;
+}
+
+.name {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}
+
+.isOnline {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
