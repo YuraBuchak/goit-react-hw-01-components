@@ -1,8 +1,8 @@
 import css from './Profile.module.css';
-import user from '../../user.json';
 import { MarkUpProfile } from './MarkUpProfile';
+import { MarkUpProfileStats } from './MarkUpProfile';
 
-export function Profile() {
+export function Profile({ user }) {
   const { username, tag, location, avatar, stats } = user;
   return (
     <div className={css.profile}>
@@ -11,8 +11,8 @@ export function Profile() {
         tag={tag}
         location={location}
         avatar={avatar}
-        stats={stats}
       />
+      <MarkUpProfileStats stats={stats} />
     </div>
   );
 }
